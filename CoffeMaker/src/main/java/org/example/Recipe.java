@@ -1,10 +1,5 @@
 package org.example;
 
-
-
-/**
- * @author   Sarah Heckman
- */
 public class Recipe {
     private String name;
     private int price;
@@ -12,10 +7,7 @@ public class Recipe {
     private int amtMilk;
     private int amtSugar;
     private int amtChocolate;
-    
-    /**
-     * Creates a default recipe for the coffee maker.
-     */
+
     public Recipe(String cappuccino, int i, int i1, int i2, int i3, int i4) {
     	this.name = "";
     	this.price = 0;
@@ -25,15 +17,11 @@ public class Recipe {
     	this.amtChocolate = 0;
     }
     
-    /**
-	 * @return   Returns the amtChocolate.
-	 */
+
     public int getAmtChocolate() {
 		return amtChocolate;
 	}
-    /**
-	 * @param chocolate   The amtChocolate to set.
-	 */
+
     public void setAmtChocolate(String chocolate) throws RecipeException {
     	int amtChocolate = 0;
     	try {
@@ -47,15 +35,11 @@ public class Recipe {
 			throw new RecipeException("Units of chocolate must be a positive integer");
 		}
 	}
-    /**
-	 * @return   Returns the amtCoffee.
-	 */
+
     public int getAmtCoffee() {
 		return amtCoffee;
 	}
-    /**
-	 * @param coffee   The amtCoffee to set.
-	 */
+
     public void setAmtCoffee(String coffee) throws RecipeException {
     	int amtCoffee = 0;
     	try {
@@ -69,15 +53,11 @@ public class Recipe {
 			throw new RecipeException("Units of coffee must be a positive integer");
 		}
 	}
-    /**
-	 * @return   Returns the amtMilk.
-	 */
+
     public int getAmtMilk() {
 		return amtMilk;
 	}
-    /**
-	 * @param milk   The amtMilk to set.
-	 */
+
     public void setAmtMilk(String milk) throws RecipeException{
     	int amtMilk = 0;
     	try {
@@ -91,15 +71,11 @@ public class Recipe {
 			throw new RecipeException("Units of milk must be a positive integer");
 		}
 	}
-    /**
-	 * @return   Returns the amtSugar.
-	 */
+
     public int getAmtSugar() {
 		return amtSugar;
 	}
-    /**
-	 * @param sugar   The amtSugar to set.
-	 */
+
     public void setAmtSugar(String sugar) throws RecipeException {
     	int amtSugar = 0;
     	try {
@@ -113,29 +89,21 @@ public class Recipe {
 			throw new RecipeException("Units of sugar must be a positive integer");
 		}
 	}
-    /**
-	 * @return   Returns the name.
-	 */
+
     public String getName() {
 		return name;
 	}
-    /**
-	 * @param name   The name to set.
-	 */
+
     public void setName(String name) {
 
     		this.name = name;
 
 	}
-    /**
-	 * @return   Returns the price.
-	 */
+
     public int getPrice() {
 		return price;
 	}
-    /**
-	 * @param price   The price to set.
-	 */
+
     public void setPrice(String price) throws RecipeException{
     	int amtPrice = 0;
     	try {
@@ -150,11 +118,6 @@ public class Recipe {
 		}
 	} 
     
-    /**
-     * Returns the name of the recipe.
-
-     * @return String
-     */
     public String toString() {
     	return name;
     }
